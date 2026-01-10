@@ -2,6 +2,7 @@
 Por Sara Milena Arevalo Cristancho
 ---
 **Lenguaje:** Go
+
 **Descripción:** Herramienta de línea de comandos para consultar el estado SSL/TLS de un host usando la API de SSL Labs. Permite visualizar un resumen del escaneo, detalles por endpoint, y analizar múltiples hosts.
 
 ## Características
