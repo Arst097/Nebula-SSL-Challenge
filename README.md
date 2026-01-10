@@ -24,7 +24,7 @@ Por Sara Milena Arevalo Cristancho
 git clone https://github.com/Arst097/Nebula-SSL-Challenge.git
 cd challenge-ssl-labs
 ```
-3. Ejecutar el programa:
+2. Ejecutar el programa:
 ```bash
 go run main.go
 ```
