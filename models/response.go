@@ -1,5 +1,7 @@
 package models
 
+import "time"
+
 //Estructuras para utilizar informacion del JSON obtenido por la API
 type GeneralResp struct {
 	Status    string     `json:"status"`
@@ -19,4 +21,9 @@ type Endpoint struct {
 	IsExceptional bool   `json:"isExceptional"`
 	Progress      int    `json:"progress"`
 	Duration      int    `json:"duration"`
+}
+
+type CacheEntry struct {
+	Data       GeneralResp
+	ExpiriesAt time.Time
 }

@@ -54,3 +54,22 @@ func DetailsEndpoint(result *models.GeneralResp) {
 
 	fmt.Println("------------------------------------------------")
 }
+
+func AllEndpoints(result *models.GeneralResp) {
+
+	for i, ep := range result.Endpoints {
+		//Cambio de duracion de milisegundos a minutos/segundos
+		d := time.Duration(ep.Duration) * time.Millisecond
+
+		fmt.Printf("\n● -------- Endpoint %d -------- ●\n", i+1)
+		fmt.Println("IP:", ep.IPAddress)
+		fmt.Println("Nombre del Servidor: ", ep.ServerName)
+		fmt.Println("Grado:", ep.Grade)
+		fmt.Println("Advertencias detectadas:", ep.HasWarnings)
+		fmt.Println("Config. Especial: ", ep.IsExceptional)
+		fmt.Printf("Progreso: %d%%\n", ep.Progress)
+		fmt.Println("Duración: ", d)
+
+	}
+
+}
